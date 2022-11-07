@@ -1,0 +1,243 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+}
+
+.navbar {
+    width: 100%;
+    background: #FFCCC1;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navLinks li {
+    list-style: none;
+    font-size: 2rem;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HERO CONTAINER */
+
+.heroContainer {
+    margin: 1rem;
+    display: flex;
+    gap: 6rem;
+}
+
+.heroLeft {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+
+.heroContainer h1 {
+    font-size: 4rem;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+}
+
+.heroContainer p {
+    line-height: 2.5rem;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+}
+
+.heroRight {
+    width: 50%;
+}
+
+.heroContainer img {
+    width: 100%;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+/* highlight REEL */
+
+.highlightReel {
+    background: url('./images/highlight.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.highlightReelMessage {
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.highlightReelMessage a {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: #FFF1EE
+}
+
+.highlightReelMessage p {
+    font-size: 5rem;
+}
+
+/* Grid section */
+
+.gridContainer {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    height: 400px;
+    width: 400px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.imageContainer img:hover {
+    transform: scale(1.2);
+    
+}
+
+.imageInfo {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 30px;
+    transition: all 0.5s ease;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    background: #FFCCC1;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact li {
+    list-style: none;
+}
+
+.contact a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.footer p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contactForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm input {
+    padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.contactForm button {
+    padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+@media (max-width: 720px) {
+    .heroContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heroContainer h1 {
+        font-size: 3rem;
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .heroContainer p {
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .heroContainer img {
+        margin-top: 0;
+        overflow: hidden;
+    }
+
+    .heroLeft {
+        width: 100%;
+    }
+    .heroRight {
+        width: 100%;
+    }
+
+    .gridContainer {
+        grid-gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contactForm {
+        width: 100%;
+    }
+  }
+
