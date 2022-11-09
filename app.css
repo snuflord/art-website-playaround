@@ -33,6 +33,19 @@ body {
     font-size: 2rem;
 }
 
+.navLinks li:after {
+    transition: all ease-in-out .2s;
+    background: black;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+
+.navLinks li:hover:after {
+    width: 100%;
+}
+
 .navLinks a {
     text-decoration: none;
     color: black;
@@ -83,6 +96,10 @@ body {
     width: 100%;
     margin-top: 2rem;
     overflow: hidden;
+}
+
+.heroImg {
+    border-radius: 10px;
 }
 
 
@@ -163,12 +180,10 @@ body {
     height: 400px;
     width: 400px;
     transition: all 0.5s ease-in-out;
-    overflow: hidden;
 }
 
 .imageContainer img:hover {
     transform: scale(1.2);
-    
 }
 
 .imageInfo {
